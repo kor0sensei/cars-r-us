@@ -1,28 +1,28 @@
-import {CarColor} from "./Color.js"
-import {CarInterior} from "./Interior"
-import {CarTechnology} from "./Interior.js"
-import {CarWheel} from "./Wheel.js"
+import {CarColors} from "./Color.js"
+import {CarInteriors} from "./Interior.js"
+import {CarTechnologies} from "./Technology.js"
+import {CarWheels} from "./Wheel.js"
 
-export const CarsRus = () => {
+export const CarsRUs = () => {
     return `
         <h1>Cars-R-Us</h1>
 
         <article class="choices">
             <section class="choices__colors options">
                 <h2>Paint Color</h2>
-                ${CarColor()}
+                ${CarColors()}
             </section>
             <section class="choices__interiors options">
                 <h2>Interiors</h2>
-                ${CarInterior()}
+                ${CarInteriors()}
             </section>
             <section class="choices__technolgies options">
                 <h2>Technologies</h2>
-                ${CarTechnology()}
+                ${CarTechnologies()}
             </section>
             <section class="choices__wheels options">
                 <h2>Wheels</h2>
-                ${CarWheel()}
+                ${CarWheels()}
             </section>
         </article>        
         <article>

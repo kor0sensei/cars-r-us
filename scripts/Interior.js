@@ -1,6 +1,6 @@
 import { getInteriors } from "./data.js"
 
-const interiors = getInteriors
+const interiors = getInteriors()
 
 export const CarInteriors = () => {
     let html = "<ul>"

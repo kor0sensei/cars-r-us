@@ -1,6 +1,6 @@
 import { getTechnologies } from "./data.js"
 
-const technologies = getTechnologies
+const technologies = getTechnologies()
 
 export const CarTechnologies = () => {
     let html = "<ul>"

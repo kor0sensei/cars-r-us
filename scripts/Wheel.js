@@ -1,6 +1,6 @@
-import { getWheels} from "./.js"
+import { getWheels} from "./data.js"
 
-const wheels = getWheels
+const wheels = getWheels()
 
 export const CarWheels = () => {
     let html = "<ul>"
