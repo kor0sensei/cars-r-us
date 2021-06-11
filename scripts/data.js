@@ -1,23 +1,23 @@
 const database = {
-    color: [
+    colors: [
         {id: 1, color: "Silver", price: 650},
         {id: 2, color: "Midnight Blue", price: 1000},
         {id: 3, color: "Firebrick Red", price: 1600},
         {id: 4, color: "Spring Green", price: 900}
     ],
-    interior: [
+    interiors: [
         {id: 1, interior: "Beige Fabric", price: 500},
         {id: 2, interior: "Charcoal Fabric", price: 700},
         {id: 3, interior: "White Leather", price: 1000},
         {id: 4, interior: "Black Leather", price: 1200}
     ],
-    technology: [
+    technologies: [
         {id: 1, technology: "Basic Package", price: 300},
         {id: 2, technology: "Navigation Package", price: 800},
         {id: 3, technology: "Visibilty Package", price: 1300},
         {id: 4, technology: "Ultra Package", price: 2000}
     ],
-    wheel: [
+    wheels: [
         {id: 1, wheel: "17-inch Pair Radial", price: 600},
         {id: 2, wheel: "17-inch Pair Radial Black", price: 1000},
         {id: 3, wheel: "18-inch Pair Spoke Silver", price: 1400},
@@ -38,7 +38,7 @@ const database = {
     }
 
 export const getColors = () => {
-    return database.paintColor.map(color => ({...color}))
+    return database.colors.map(color => ({...color}))
 }
 
 export const getInteriors = () => {
@@ -50,5 +50,5 @@ export const getTechnologies = () => {
 }
 
 export const getWheels = () => {
-    return database.metals.map(wheel => ({...wheel}))
+    return database.wheels.map(wheel => ({...wheel}))
 }

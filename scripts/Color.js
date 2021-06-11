@@ -1,14 +1,14 @@
 import {getColors} from "./data.js"
 
-const colors = getColors
+const colors = getColors()
 
-export const CarColor = () => {
+export const CarColors = () => {
     let html = "<ul>"
 
     const itemChoices = colors.map(
     (color) => {
         return `<li>
-            <input type="radio" name="style" value="${color.id}" /> ${color.color}
+            <input type="radio" name="color" value="${color.id}" /> ${color.color}
         </li>`
     }
 )
