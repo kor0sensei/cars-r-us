@@ -1,13 +1,13 @@
 .choices {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .options {
-    flex-basis: 24%;
-    margin: 2rem;
+    flex-basis: 20%;
+    margin: 1rem;
     border: 1px solid black;
     padding: 1rem;
-    /* border-radius: 0.5rem; */
+    border-radius: 2rem;
     box-shadow: 0.25rem 0.25rem 0.5rem grey;
 }
