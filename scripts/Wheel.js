@@ -1,6 +1,24 @@
-import { getWheels} from "./data.js"
+import { getWheels, setWheel } from "./data.js"
 
 const wheels = getWheels()
+
+// document.addEventListener(
+//     "change",
+//     (event) => {
+//         if (event.target.name === "wheel") {
+//             window.alert(`User chose wheel ${event.target.value}`)
+//         }
+//     }
+// )
+
+document.addEventListener(
+    "change",
+    (event) => {
+        if (event.target.name === "wheel") {
+            setWheel(parseInt(event.target.value))
+        }
+    }
+)
 
 export const CarWheels = () => {
     let html = "<ul>"
@@ -8,7 +26,7 @@ export const CarWheels = () => {
     const itemChoices = wheels.map(
     (wheel) => {
         return `<li>
-            <input type="radio" name="style" value="${wheel.id}" /> ${wheel.wheel}
+            <input type="radio" name="wheel" value="${wheel.id}" /> ${wheel.wheel}
         </li>`
     }
 )
